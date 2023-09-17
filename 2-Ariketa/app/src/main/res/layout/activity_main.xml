@@ -15,7 +15,8 @@
         android:textColor="@color/black"
         app:layout_constraintLeft_toRightOf="@id/guztira"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/guztira"
@@ -30,9 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:textColor="@color/black"
         android:text="RESET"
+        android:textColor="@color/black"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gehi1"
         app:layout_constraintTop_toBottomOf="@id/resetall" />
 
     <Button
@@ -40,9 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:textColor="@color/black"
         android:text="RESET"
+        android:textColor="@color/black"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gehi2"
         app:layout_constraintTop_toBottomOf="@id/reset1" />
 
     <Button
@@ -50,9 +53,97 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:textColor="@color/black"
         android:text="RESET"
+        android:textColor="@color/black"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gehi3"
         app:layout_constraintTop_toBottomOf="@id/reset2" />
 
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gehi4"
+        app:layout_constraintTop_toBottomOf="@id/reset3" />
+
+    <TextView
+        android:id="@+id/guztira1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guztira" />
+
+    <TextView
+        android:id="@+id/guztira2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guztira1" />
+
+    <TextView
+        android:id="@+id/guztira3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guztira2" />
+
+    <TextView
+        android:id="@+id/guztira4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guztira3"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <Button
+        android:id="@+id/gehi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guztira1"
+        app:layout_constraintTop_toBottomOf="@id/resetall" />
+
+    <Button
+        android:id="@+id/gehi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guztira2"
+        app:layout_constraintTop_toBottomOf="@id/gehi1" />
+
+    <Button
+        android:id="@+id/gehi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guztira3"
+        app:layout_constraintTop_toBottomOf="@id/gehi2" />
+
+    <Button
+        android:id="@+id/gehi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guztira4"
+        app:layout_constraintTop_toBottomOf="@id/gehi3"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
