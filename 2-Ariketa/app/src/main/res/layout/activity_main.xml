@@ -2,148 +2,174 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/resetall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:text="RESET ALL"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/guztira"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
+    <!-- Orokorra -->
     <TextView
-        android:id="@+id/guztira"
+        android:id="@+id/KontagailuOrokorra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituBat"
+        app:layout_constraintEnd_toStartOf="@+id/ResetOrokorra"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/reset1"
+        android:id="@+id/ResetOrokorra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:text="RESET"
+        android:text="Reset ALL"
+        android:backgroundTint="@android:color/holo_orange_dark"
         android:textColor="@color/black"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gehi1"
-        app:layout_constraintTop_toBottomOf="@id/resetall" />
+        app:layout_constraintBottom_toBottomOf="@+id/GehituBat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/KontagailuOrokorra"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Lehenengo kontadorea -->
+    <TextView
+        android:id="@+id/KontagailuBat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituBi"
+        app:layout_constraintEnd_toStartOf="@+id/GehituBat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ResetOrokorra" />
 
     <Button
-        android:id="@+id/reset2"
+        android:id="@+id/GehituBat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:text="RESET"
+        android:text="+1"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:textColor="@color/black"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gehi2"
-        app:layout_constraintTop_toBottomOf="@id/reset1" />
+        app:layout_constraintBottom_toBottomOf="@+id/GehituBi"
+        app:layout_constraintEnd_toStartOf="@+id/ResetBat"
+        app:layout_constraintStart_toEndOf="@+id/KontagailuBat"
+        app:layout_constraintTop_toTopOf="@+id/ResetOrokorra"/>
 
     <Button
-        android:id="@+id/reset3"
+        android:id="@+id/ResetBat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_light"
         android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
         android:textColor="@color/black"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gehi3"
-        app:layout_constraintTop_toBottomOf="@id/reset2" />
+        app:layout_constraintBottom_toBottomOf="@+id/GehituBi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GehituBat"
+        app:layout_constraintTop_toTopOf="@+id/ResetOrokorra"/>
+
+    <!-- Bigarren kontadorea -->
+    <TextView
+        android:id="@+id/KontagailuBi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituHiru"
+        app:layout_constraintEnd_toStartOf="@+id/GehituBi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GehituBat" />
 
     <Button
-        android:id="@+id/reset4"
+        android:id="@+id/GehituBi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:text="RESET"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="+1"
         android:textColor="@color/black"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gehi4"
-        app:layout_constraintTop_toBottomOf="@id/reset3" />
+        app:layout_constraintBottom_toBottomOf="@+id/GehituHiru"
+        app:layout_constraintEnd_toStartOf="@+id/ResetBi"
+        app:layout_constraintStart_toEndOf="@+id/KontagailuBi"
+        app:layout_constraintTop_toTopOf="@+id/GehituBat" />
 
+    <Button
+        android:id="@+id/ResetBi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituHiru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GehituBi"
+        app:layout_constraintTop_toTopOf="@+id/GehituBat"/>
+
+    <!-- Hirugarren kontadorea -->
     <TextView
-        android:id="@+id/guztira1"
+        android:id="@+id/KontagailuHiru"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guztira" />
+        app:layout_constraintBottom_toBottomOf="@+id/GehituLau"
+        app:layout_constraintEnd_toStartOf="@+id/GehituHiru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GehituBi" />
 
+    <Button
+        android:id="@+id/GehituHiru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituLau"
+        app:layout_constraintEnd_toStartOf="@+id/ResetBi"
+        app:layout_constraintStart_toEndOf="@+id/KontagailuHiru"
+        app:layout_constraintTop_toTopOf="@+id/GehituBi"/>
+
+    <Button
+        android:id="@+id/ResetHiru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/GehituLau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GehituHiru"
+        app:layout_constraintTop_toTopOf="@+id/GehituBi"/>
+
+    <!-- Laugarren kontadorea -->
     <TextView
-        android:id="@+id/guztira2"
+        android:id="@+id/KontagailuLau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guztira1" />
-
-    <TextView
-        android:id="@+id/guztira3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guztira2" />
-
-    <TextView
-        android:id="@+id/guztira4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
+        android:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guztira3"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintEnd_toStartOf="@+id/GehituLau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GehituHiru" />
 
     <Button
-        android:id="@+id/gehi1"
+        android:id="@+id/GehituLau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_green_dark"
         android:text="+1"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/guztira1"
-        app:layout_constraintTop_toBottomOf="@id/resetall" />
-
-    <Button
-        android:id="@+id/gehi2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="+1"
         android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/guztira2"
-        app:layout_constraintTop_toBottomOf="@id/gehi1" />
-
-    <Button
-        android:id="@+id/gehi3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_green_dark"
-        android:text="+1"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/guztira3"
-        app:layout_constraintTop_toBottomOf="@id/gehi2" />
-
-    <Button
-        android:id="@+id/gehi4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_green_dark"
-        android:text="+1"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/guztira4"
-        app:layout_constraintTop_toBottomOf="@id/gehi3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ResetBi"
+        app:layout_constraintStart_toEndOf="@+id/KontagailuLau"
+        app:layout_constraintTop_toTopOf="@+id/GehituHiru"/>
 
-        />
+    <Button
+        android:id="@+id/ResetLau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GehituLau"
+        app:layout_constraintTop_toTopOf="@+id/GehituHiru"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
