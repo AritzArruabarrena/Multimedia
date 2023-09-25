@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tradukzio-automatikoa</string>
+    <string name="hola_mundo">Kaixo Mundua!</string>
+    <string name="como_estas">Nola zaude?</string>
+</resources>

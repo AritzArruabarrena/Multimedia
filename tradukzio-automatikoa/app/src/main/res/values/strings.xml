@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tradukzio-automatikoa</string>
+    <string name="hola_mundo">Hola Mundo!</string>
+    <string name="como_estas">Como estas?</string>
+</resources>
