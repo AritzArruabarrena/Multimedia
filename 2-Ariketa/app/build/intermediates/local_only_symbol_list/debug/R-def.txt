@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id GehituBat
+id GehituBi
+id GehituHiru
+id GehituLau
+id KontagailuBat
+id KontagailuBi
+id KontagailuHiru
+id KontagailuLau
+id KontagailuOrokorra
+id ResetBat
+id ResetBi
+id ResetHiru
+id ResetLau
+id ResetOrokorra
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme._2aplikazioa
+style Theme._2aplikazioa
+xml backup_rules
+xml data_extraction_rules
