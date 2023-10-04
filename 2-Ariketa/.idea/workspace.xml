@@ -10,47 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25f59411-9658-452a-aee1-239d9353a035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/androidTest/java/com/example/tradukzio_automatikoa/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/app/src/test/java/com/example/tradukzio_automatikoa/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tradukzio-automatikoa/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultiCounterV2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiCounterV2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultiCounterV3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiCounterV3/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\arruabarrena.aritz\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\aritz\.android\avd\Pixel_7_API_34.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -105,15 +73,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/arruabarrena.aritz/Desktop/Multimedia/tradukzio-automatikoa"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/arruabarrena.aritz/Desktop/Multimedia/tradukzio-automatikoa&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="2.aplikazioa.app.main" />
