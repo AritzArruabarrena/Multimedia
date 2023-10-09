@@ -9,6 +9,7 @@ import android.widget.RatingBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
@@ -37,17 +38,27 @@ public class RecyclerFragment extends Fragment {
         // Inflate the layout for this fragment
         return (binding = FragmentRecyclerBinding.inflate(inflater, container, false)).getRoot();
     }
+
+    LiveData<List<Element>> getElements(){
+        return elementsViewModel.obtain();
+    }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        getElements().observe(getViewLifecycleOwner(), new Observer<List<Element>>() {
+            @Override
+            public void onChanged(List<Element> elements) {
+                elementsAdapter.establishList(elements);
+            }
+        });
         elementsViewModel = new ViewModelProvider(requireActivity()).get(ElementsViewModel.class);
         navController = Navigation.findNavController(view);
 
         binding.floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_recyclerFragment_to_newElementFragment);
+                navController.navigate(R.id.action_newElementFragment);
             }
         });
 
@@ -110,7 +121,7 @@ public class RecyclerFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     elementsViewModel.select(element);
-                    navController.navigate(R.id.action_recyclerFragment_to_detailFragment);
+                    navController.navigate(R.id.action_showElementFragment);
                 }
             });
 

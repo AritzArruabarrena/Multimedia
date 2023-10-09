@@ -54,5 +54,12 @@ public class ElementsRepository {
         });
 
     }
+    LiveData<List<Element>> bestRated() {
+        return elementsDAO.bestRated();
+    }
+
+    LiveData<List<Element>> search(String t) {
+        return elementsDAO.search(t);
+    }
 
 }

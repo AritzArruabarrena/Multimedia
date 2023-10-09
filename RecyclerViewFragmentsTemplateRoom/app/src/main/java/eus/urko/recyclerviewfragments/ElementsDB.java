@@ -36,6 +36,13 @@ public abstract class ElementsDB extends RoomDatabase {
 
     @Dao
     interface ElementsDAO {
+
+        @Query("SELECT * FROM Element ORDER BY rating DESC")
+        LiveData<List<Element>> bestRated();
+
+        @Query("SELECT * FROM Element WHERE name LIKE '%' || :t || '%'")
+        LiveData<List<Element>> search(String t);
+
         @Query("SELECT * FROM Element")
         LiveData<List<Element>> getElements();
 
