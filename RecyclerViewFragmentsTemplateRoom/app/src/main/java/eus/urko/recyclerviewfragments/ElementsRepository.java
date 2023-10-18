@@ -17,9 +17,6 @@ public class ElementsRepository {
     ElementsRepository(Application application){
         elementsDAO = ElementsDB.obtainInstance(application).getElementsDAO();
     }
-    ElementsRepository(){
-
-    }
     LiveData<List<Element>> get(){
         return elementsDAO.getElements();
     }

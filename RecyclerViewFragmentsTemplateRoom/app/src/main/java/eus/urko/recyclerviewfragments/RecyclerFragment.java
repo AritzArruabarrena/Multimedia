@@ -67,7 +67,7 @@ public class RecyclerFragment extends Fragment {
 
         binding.recyclerView.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
-        elementsViewModel.obtain().observe(getViewLifecycleOwner(), new Observer<List<Element>>() {
+        getElements().observe(getViewLifecycleOwner(), new Observer<List<Element>>() {
             @Override
             public void onChanged(List<Element> elements) {
                 elementsAdapter.establishList(elements);

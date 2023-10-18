@@ -39,12 +39,6 @@ public class ElementsViewModel extends AndroidViewModel {
         return resultSearch;
     }
 
-    void putTermSearch(String t){
-        termSearch.setValue(t);
-    }
-    LiveData<List<Element>> obtain(){
-        return elementsRepository.get();
-    }
 
     void select(Element element){
         elementSelected.setValue(element);
@@ -75,6 +69,10 @@ public class ElementsViewModel extends AndroidViewModel {
             super(binding.getRoot());
             this.binding = binding;
         }
+    }
+
+    public void putTermSearch(String t){
+        termSearch.setValue(t);
     }
     LiveData<List<Element>> bestRated(){
         return elementsRepository.bestRated();

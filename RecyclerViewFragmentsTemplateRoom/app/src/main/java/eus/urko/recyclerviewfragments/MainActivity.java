@@ -15,11 +15,13 @@ import android.widget.SearchView;
 import eus.urko.recyclerviewfragments.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
+    private ActivityMainBinding binding;
+    private ElementsViewModel elementsViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.FragContView)).getNavController();
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
+
                 if (destination.getId() == R.id.newElementFragment
                         || destination.getId() == R.id.detailFragment) {
                     binding.bottomNavView.setVisibility(View.GONE);
@@ -51,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                elementsViewModel.putTermSearch(newText);
+                ElementsViewModel.putTermSearch(newText);
                 return false;
             }
         });
