@@ -29,5 +29,12 @@ public class DetailFragment extends Fragment {
 
         ElementsViewModel elementsViewModel = new ViewModelProvider(requireActivity()).get(ElementsViewModel.class);
 
+        elementsViewModel.selected().observe(getViewLifecycleOwner(), new Observer<Element>() {
+            @Override
+            public void onChanged(Element element) {
+                binding.name.setText(element.name);
+                binding.description.setText(element.description);
+            }
+        });
     }
 }

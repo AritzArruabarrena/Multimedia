@@ -5,13 +5,17 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import eus.urko.recyclerviewfragments.databinding.ViewholderElementBinding;
 
 public class ElementsViewModel extends AndroidViewModel {
 
     ElementsRepository elementsRepository;
     MutableLiveData<List<Element>> listElementsMutableLiveData = new MutableLiveData<>();
+    MutableLiveData<Element> elementSelected= new MutableLiveData<>();
 
     public ElementsViewModel(@NonNull Application application) {
         super(application);
@@ -21,6 +25,14 @@ public class ElementsViewModel extends AndroidViewModel {
         listElementsMutableLiveData.setValue(elementsRepository.get());
     }
 
+
+    void select(Element element){
+        elementSelected.setValue(element);
+    }
+
+    MutableLiveData<Element> selected(){
+        return elementSelected;
+    }
 
     MutableLiveData<List<Element>> get(){
         return listElementsMutableLiveData;
@@ -43,12 +55,13 @@ public class ElementsViewModel extends AndroidViewModel {
         });
     }
 
-    void update(Element element, float rating){
-        elementsRepository.update(element, rating, new ElementsRepository.Callback() {
-            @Override
-            public void whenFinish(List<Element> elements) {
-                listElementsMutableLiveData.setValue(elements);
-            }
-        });
+
+    class ElementViewHolder extends RecyclerView.ViewHolder {
+        private final ViewholderElementBinding binding;
+
+        public ElementViewHolder(ViewholderElementBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
     }
 }

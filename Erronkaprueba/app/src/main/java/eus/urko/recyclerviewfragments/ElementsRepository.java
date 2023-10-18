@@ -37,9 +37,5 @@ public class ElementsRepository {
         callback.whenFinish(elements);
     }
 
-    public void update(Element element, float rating, Callback callback) {
-        element.rating = rating;
-        callback.whenFinish(elements);
-    }
 
 }

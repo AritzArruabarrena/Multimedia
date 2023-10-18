@@ -32,5 +32,16 @@ public class NewElementFragment extends Fragment {
         ElementsViewModel elementosViewModel = new ViewModelProvider(requireActivity()).get(ElementsViewModel.class);
         NavController navController = Navigation.findNavController(view);
 
+        binding.newElementBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = binding.name.getText().toString();
+                String description = binding.description.getText().toString();
+
+                elementosViewModel.add(new Element(R.drawable.vuejs_original,name, description));
+
+                navController.popBackStack();
+            }
+        });
     }
 }
