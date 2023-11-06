@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
 import android.widget.RatingBar;
 
 import androidx.annotation.NonNull;
@@ -52,9 +53,8 @@ public class RecyclerFragment extends Fragment {
         });
 
         ElementsAdapter elementsAdapter = new ElementsAdapter();
-        binding.recyclerView.setAdapter(elementsAdapter);
+        binding.gridView.setAdapter((ListAdapter) elementsAdapter);
 
-        binding.recyclerView.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
         elementsViewModel.get().observe(getViewLifecycleOwner(), new Observer<List<Element>>() {
             @Override
@@ -79,7 +79,7 @@ public class RecyclerFragment extends Fragment {
                 elementsViewModel.delete(element);
 
             }
-        }).attachToRecyclerView(binding.recyclerView);
+        });
 
     }
 

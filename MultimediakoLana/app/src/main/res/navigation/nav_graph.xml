@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginn">
+
+    <fragment
+        android:id="@+id/gridview"
+        android:name="com.example.multimediakolana.GridViewa"
+        android:label="fragment_gridview"
+        tools:layout="@layout/fragment_gridview" />
+    <fragment
+        android:id="@+id/loginn"
+        android:name="com.example.multimediakolana.login"
+        android:label="fragment_loginn"
+        tools:layout="@layout/fragment_loginn" >
+        <action
+            android:id="@+id/action_loginn_to_gridview"
+            app:destination="@id/gridview" />
+    </fragment>
+</navigation>
