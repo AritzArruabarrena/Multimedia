@@ -29,7 +29,7 @@ public class CourseGVAdapter extends ArrayAdapter<CourseModel> {
 
         CourseModel courseModel = getItem(position);
         TextView courseTV = listitemView.findViewById(R.id.idTVCourse);
-        ImageView courseIV = listitemView.findViewById(R.id.idIVcourse);
+        ImageView courseIV = listitemView.findViewById(R.id.imageView);
 
         courseTV.setText(courseModel.getCourse_name());
         courseIV.setImageResource(courseModel.getImgid());

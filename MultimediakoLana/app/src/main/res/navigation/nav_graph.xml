@@ -9,7 +9,11 @@
         android:id="@+id/gridview"
         android:name="com.example.multimediakolana.GridViewa"
         android:label="fragment_gridview"
-        tools:layout="@layout/fragment_gridview" />
+        tools:layout="@layout/fragment_gridview" >
+        <action
+            android:id="@+id/action_gridview_to_players"
+            app:destination="@id/players" />
+    </fragment>
     <fragment
         android:id="@+id/loginn"
         android:name="com.example.multimediakolana.login"
@@ -19,4 +23,9 @@
             android:id="@+id/action_loginn_to_gridview"
             app:destination="@id/gridview" />
     </fragment>
+    <fragment
+        android:id="@+id/players"
+        android:name="com.example.multimediakolana.Players"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" />
 </navigation>

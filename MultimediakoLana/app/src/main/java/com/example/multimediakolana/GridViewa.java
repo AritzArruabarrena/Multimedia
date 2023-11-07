@@ -1,25 +1,29 @@
 package com.example.multimediakolana;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.recyclerview.widget.RecyclerView;
+import com.example.multimediakolana.CourseGVAdapter;
+import com.example.multimediakolana.CourseData;
 import java.util.ArrayList;
+import java.util.List;
 
 public class GridViewa extends Fragment {
     GridView coursesGV;
-
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_gridview, container, false);
     }
 
@@ -28,19 +32,11 @@ public class GridViewa extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         coursesGV = view.findViewById(R.id.gridview);
-        ArrayList<CourseModel> courseModelArrayList = new ArrayList<CourseModel>();
+        CourseData.initializeCourseList(); // Assuming CourseData is a valid class
 
-        courseModelArrayList.add(new CourseModel("Betis", R.mipmap.betis));
-        courseModelArrayList.add(new CourseModel("Real Sociedad", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Osasuna", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Alaves", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Sevilla", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Cadiz", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Celta de Vigo", R.drawable.ic_launcher_background));
-
-
-        CourseGVAdapter adapter = new CourseGVAdapter(coursesGV.getContext(), courseModelArrayList);
+        CourseGVAdapter adapter = new CourseGVAdapter(requireContext(), CourseData.getCourseList());
         coursesGV.setAdapter(adapter);
     }
+
 
 }
