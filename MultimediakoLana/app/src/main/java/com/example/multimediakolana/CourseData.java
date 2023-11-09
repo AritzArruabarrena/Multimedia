@@ -4,24 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CourseData {
-    private static ArrayList<CourseModel> courseModelArrayList = new ArrayList<>();
+    private static ArrayList<Ekipoak> courseModelArrayList = new ArrayList<>();
+    private static ArrayList<Ekipoak> courseModelArrayList1 = new ArrayList<>();
 
-    public static void addCourse(CourseModel courseModel) {
+    public static void addCourse(Ekipoak courseModel) {
         courseModelArrayList.add(courseModel);
     }
 
-    public static ArrayList<CourseModel> getCourseList() {
+    public static ArrayList<Ekipoak> getCourseList() {
         return courseModelArrayList;
     }
 
     public static void initializeCourseList() {
-        courseModelArrayList.add(new CourseModel("Betis", R.mipmap.betis));
-        courseModelArrayList.add(new CourseModel("Real Sociedad", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Osasuna", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Alaves", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Sevilla", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Cadiz", R.drawable.ic_launcher_background));
-        courseModelArrayList.add(new CourseModel("Celta de Vigo", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Betis", R.mipmap.betis));
+        courseModelArrayList.add(new Ekipoak("Real Sociedad", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Osasuna", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Alaves", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Sevilla", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Cadiz", R.drawable.ic_launcher_background));
+        courseModelArrayList.add(new Ekipoak("Celta de Vigo", R.drawable.ic_launcher_background));
+    }
+
+    public static void PlayerList() {
+        courseModelArrayList1.add(new Ekipoak("Betis", R.mipmap.betis));
+    }
+
+    public static ArrayList<Ekipoak> getCourseModelArrayList1() {
+        return courseModelArrayList1;
     }
 
     public int getImageResource() {
@@ -32,7 +41,7 @@ public class CourseData {
         return  getName();
     }
 
-    public List<CourseModel> get() {
+    public List<Ekipoak> get() {
         return get();
     }
 }

@@ -1,13 +1,13 @@
 package com.example.multimediakolana;
 
-public class CourseModel {
+public class Ekipoak {
 
     // string course_name for storing course_name
     // and imgid for storing image id.
     private String course_name;
     private int imgid;
 
-    public CourseModel(String course_name, int imgid) {
+    public Ekipoak(String course_name, int imgid) {
         this.course_name = course_name;
         this.imgid = imgid;
     }
