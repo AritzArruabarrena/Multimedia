@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultimediakoLana</string>
+    <string name="sartu">Entrar</string>
+    <string name="ongi_etorri_aplikaziora">" Bienvenido a la Aplicación!! "</string>
+    <string name="user">Usuario</string>
+    <string name="aukeratu_zure_ekipoa">" ELIGE TU EQUIPO "</string>
+</resources>

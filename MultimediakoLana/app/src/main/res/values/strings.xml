@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">MultimediakoLana</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sartu">Sartu</string>
+    <string name="ongi_etorri_aplikaziora">Ongi Etorri Aplikaziora!!</string>
+    <string name="user">User:</string>
+    <string name="aukeratu_zure_ekipoa">AUKERATU ZURE EKIPOA</string>
 </resources>

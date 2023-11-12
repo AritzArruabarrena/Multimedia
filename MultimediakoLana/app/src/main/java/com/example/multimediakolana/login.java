@@ -44,7 +44,6 @@ public class login extends Fragment {
                 if (user1.equals("Admin")) {
                     navController.navigate(R.id.action_loginn_to_gridview);
                 } else {
-                    System.out.println("hola");
                 }
             }
         });

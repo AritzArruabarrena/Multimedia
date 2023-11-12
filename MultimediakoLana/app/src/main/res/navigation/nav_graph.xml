@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_gridview_to_players"
             app:destination="@id/players" />
+        <action
+            android:id="@+id/action_gridview_to_AddFragment"
+            app:destination="@id/AddFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginn"
@@ -27,5 +30,19 @@
         android:id="@+id/players"
         android:name="com.example.multimediakolana.Players"
         android:label="fragment_players"
-        tools:layout="@layout/fragment_players" />
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_players_to_addPlayer"
+            app:destination="@id/addPlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddFragment"
+        android:name="com.example.multimediakolana.AddFragment"
+        android:label="AddFragment"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/addPlayer"
+        android:name="com.example.multimediakolana.AddPlayer"
+        android:label="fragment_add_player"
+        tools:layout="@layout/fragment_add_player" />
 </navigation>

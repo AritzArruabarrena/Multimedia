@@ -21,11 +21,24 @@
         android:id="@+id/textView3"
         android:layout_width="248dp"
         android:layout_height="39dp"
-        android:text="AUKERATU ZURE EKIPOA"
+        android:text="@string/aukeratu_zure_ekipoa"
         android:textSize="21dp"
         app:layout_constraintBottom_toTopOf="@+id/gridview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textStyle="bold"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:contentDescription="add"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
